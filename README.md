@@ -33,10 +33,6 @@ Open the file in a browser. Three tabs:
    postings list (docID, tf, positions) — the dictionary and positional
    index in browsable form.
 
-To exercise Part E's mandatory test queries, run `python3 source_code/generate_report.py`
-(regenerates `test_report.md`) or simply type each query into the Search /
-Phrase & proximity tabs and note the results — the app has no separate
-test-runner UI.
 
 ## Search filters (custom addition, beyond the base assignment spec)
 The Search tab has three dropdowns — **Type of cloth**, **Colour**, and
