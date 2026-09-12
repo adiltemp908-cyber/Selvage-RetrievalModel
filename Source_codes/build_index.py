@@ -204,7 +204,7 @@ def main():
 
     print(f"Wrote {OUT_JSON}  ({len(index_json)} unique terms, {N} docs)")
 
-    # ---------------- human-readable deliverable: inverted index ----------------
+    # ---------------- inverted index readable ----------------
     with open(OUT_INVERTED_TXT, "w", encoding="utf-8") as f:
         f.write("INVERTED INDEX (term -> df -> postings[(docID, tf), ...])\n")
         f.write("=" * 70 + "\n\n")
@@ -214,7 +214,7 @@ def main():
             f.write(f"{term}  (df={entry['df']})\n    -> {postings_str}\n\n")
     print(f"Wrote {OUT_INVERTED_TXT}")
 
-    # ---------------- human-readable deliverable: positional index ----------------
+    # ---------------- positional index readable ----------------
     with open(OUT_POSITIONAL_TXT, "w", encoding="utf-8") as f:
         f.write("POSITIONAL INDEX (term -> df -> [(docID, tf, [positions]), ...])\n")
         f.write("=" * 70 + "\n\n")
